@@ -1,0 +1,69 @@
+.downloads {
+    padding: 3em 0;
+    text-align: center;
+
+    .wrapper {
+        max-width: 1280px;
+        margin: auto;
+        padding: 0 1em;
+
+        h2 {
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+
+        p {
+            color: #9194a1;
+            line-height: 1.8;
+            font-size: 0.9em;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .grid {
+            margin-top: 3em;
+            display: grid;
+            grid-row-gap: 2em;
+            margin: 0 1em;
+
+            .card {
+                border-radius: 1em;
+                padding: 1.5em;
+                padding-top: 2.5em;
+                background: url(../../images/bg-dots.svg) repeat-x bottom center 100px;
+
+                h3 {
+                    margin: 1.5rem 0 0.5rem 0;
+                }
+
+                p {
+                    margin: 0.5rem 0 4em 0;
+                    color: #9194a1;
+                    line-height: 1.8;
+                    font-size: 0.9em;
+                }
+
+                button {
+                    width: 100%;
+                    background: #5368df;
+                    color: #fff;
+                    padding: 1em 1em;
+                    font-size: 0.9em;
+                    font-weight: 500;
+                    border-radius: 0.5em;
+                    border: none;
+                    cursor: pointer;
+                    box-shadow: 0 5px 10px -5px #5368df;
+                }
+            }
+        }
+        @media screen and (min-width: 1024px) {
+
+            .grid {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-column-gap: 2em;
+                padding-bottom: 7em;
+            }
+        }
+    }
+}

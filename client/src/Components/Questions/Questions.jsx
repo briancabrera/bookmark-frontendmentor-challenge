@@ -16,7 +16,7 @@ export default function Questions() {
                     <Question title="What is Bookmark?"/>
                     <Question title="How can I request a new browser?"/>
                     <Question title="Is there a mobile app?"/>
-                    <Question title="What about other CHromium browsers?"/>
+                    <Question title="What about other Chromium browsers?"/>
                 </div>
             </div>
             <button>More Info</button>

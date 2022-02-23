@@ -4,6 +4,7 @@ import Features from "./Components/Features/Features.jsx"
 import Footer from "./Components/Footer/Footer.jsx"
 import Join from "./Components/Join/Join.jsx"
 import Questions from "./Components/Questions/Questions.jsx"
+import Download from "./Components/Download/Download.jsx"
 import './App.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Landing />
       <Features />
+      <Download />
       <Questions />
       <Join />
       <Footer />

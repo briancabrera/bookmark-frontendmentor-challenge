@@ -33,15 +33,15 @@ export default function () {
                 </ul>
                 <div className="grid">
                     <div className="content" id="bookmarking">
-                        <img src="../../images/illustration-features-tab-1.svg" alt="" />
+                        <img src={require(`../../images/illustration-features-tab-1.svg`)} alt="" />
                         <div>
                             <h2>Bookmark in one click</h2>
                             <p>
                                 Organize your bookmarks however you like. Our simple drag-and-drop interface
                                 gives you complete control over how you manage your favourite sites.
                             </p>
+                            <button className="btn">More Info</button>
                         </div>
-                        <button className="btn">More Info</button>
                     </div>
                     <div className="content" id="searching">
                         <img src="../../images/illustration-features-tab-2.svg" alt="" />
