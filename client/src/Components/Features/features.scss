@@ -1,0 +1,162 @@
+.features {
+    text-align: center;
+    padding: 3em 0;
+    
+    .wrapper {
+        max-width: 1280px;
+        margin: auto;
+        padding: 0 1em;
+
+        h2 {
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+
+        p {
+            color: #9194a1;
+            line-height: 1.8;
+            font-size: 0.9em;
+        }
+
+        .tabs input[id="bookmarking"]:checked ~ ul [for="bookmarking"]:after {
+            display: block;
+        }
+
+        .tabs input[id="searching"]:checked ~ ul [for="searching"]:after {
+            display: block;
+        }
+
+        .tabs input[id="sharing"]:checked ~ ul [for="sharing"]:after {
+            display: block;
+        }
+
+        .tabs input[id="bookmarking"]:checked ~ .grid #bookmarking {
+            display: flex;
+        }
+
+        .tabs input[id="searching"]:checked ~ .grid #searching {
+            display: flex;
+        }
+
+        .tabs input[id="sharing"]:checked ~ .grid #sharing {
+            display: flex;
+        }
+
+        .tabs {
+            margin-top: 2em;
+            border-top: 1px solid #9194a1;
+
+            input {
+                display: none;
+                background-color: initial;
+                cursor: default;
+                appearance: auto;
+                box-sizing: border-box;
+                margin: 3px 3px 0px 5px;
+                padding: initial;
+                border: initial;
+            }
+
+            @media screen and (min-width: 1024px) {
+                border-top: none;
+                text-align: left;
+            }
+
+            ul {
+                padding: 0;
+                list-style: none;
+                margin: 0;
+
+                @media screen and (min-width: 1024px) {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .link {
+                    display: list-item;
+                    text-align: match-parent;
+                    border-bottom: 1px solid #9194a1;
+
+                    label {
+                        padding: 1em 0;
+                        display: block;
+                        position: relative;
+
+                        &:after {
+                            display: none;
+                            content: "";
+                            height: 5px;
+                            position: absolute;
+                            bottom: 0;
+                            width: 50%;
+                            left: 0;
+                            transform: translateX(50%);
+                            box-shadow: inset 0 -15px 0px -10px #fa5757;
+                        }
+
+                        @media screen and (min-width: 1024px) {
+                            padding: 2em 2em;
+
+                            &:after {
+                                width: 100%;
+                                transform: translateX(0);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .grid {
+                margin-top: 4em;
+                
+                .content {
+                    display: none;
+                    flex-direction: column;
+
+                    img {
+                        max-width: 100%;
+                        margin-bottom: 1.5em;
+                    }
+
+                    div {
+                        
+                        h2 {
+                            font-size: 1.5em;
+                            font-weight: 500;
+                        }
+
+                        p {
+                            color: #9194a1;
+                            line-height: 1.8;
+                            font-size: 0.9em;
+                        }
+
+                        button {
+                            background: #5368df;
+                            color: #fff;
+                            padding: 1em 1em;
+                            font-size: 0.9em;
+                            font-weight: 500;
+                            border-radius: 0.5em;
+                            margin-left: 0.5em;
+                            border: none;
+                            cursor: pointer;
+                            -webkit-appearance: none;
+                            box-shadow: 0 5px 10px -5px #5368df; 
+                        }
+                    }
+
+                    @media screen and (min-width: 1024px) {
+                        flex-direction: row;
+                        align-items: center;
+
+                        img {
+                            margin-right: 5em;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

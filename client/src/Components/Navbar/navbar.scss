@@ -1,0 +1,112 @@
+.header {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1em 0;
+    transition: 0.3s background;
+    z-index: 3;
+    width: 100%;
+
+    .wrapper {
+        max-width: 1280px;
+        margin: auto;
+        padding: 0 1em;
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .header-logo {
+                display: inline-flex;
+                width: 150px;
+                height: 40px;
+                background: url(../../images/logo-bookmark.svg) no-repeat center;
+                background-size: contain;
+            }
+
+            .menu {
+                visibility: hidden;
+                position: absolute;
+                opacity: 0;
+                left: 0;
+                right: 0;
+                top: 100%;
+                background: rgba(47,53,79,0.9);
+                height: 100vh;
+                transform: translateY(-50px);
+                transition: 0.3s transform, 0.3s opacity;
+                will-change: transform;
+
+                @media screen and (min-width: 1024px) {
+                    transform: translateY(0);
+                    visibility: visible;
+                    opacity: 1;
+                    position: initial;
+                    height: auto;
+                    background: initial;
+                }
+
+                .li-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+    
+                        @media screen and (min-width: 1024px){
+                            display: flex;
+                        }
+    
+                        li {
+                            display: list-item;
+                            text-align: match-parent;
+                            border-top: 1px solid #9194a1;
+    
+                            @media screen and (min-width: 1024px){
+                                border: none;
+                            }
+    
+                            a {
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                display: block;
+                                text-align: center;
+                                padding: 1em;
+                                letter-spacing: 2px;
+                                color: #fff;
+                                
+                                &#login {
+                                    border: 2px solid #fff;
+                                    border-radius: 5px;
+                                    margin-top: 1em;
+                                    padding: 0.7em;
+                                }
+    
+                                @media screen and (min-width: 1024px) {
+                                    color: #252b46;
+    
+                                    &#login {
+                                        border: none;
+                                        border-radius: 0.5em;
+                                        margin-top: 0;
+                                        padding: 0.7em 2em;
+                                        background: #fa5757;
+                                        color: #fff;
+                                        margin-left: 2em;
+                                    }
+                                }
+    
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
