@@ -11,22 +11,22 @@ export default function () {
                 Your bookmarks sync between your devices so you can access them on the go.
             </p>
             <div className="tabs">
-                <input type="radio" name="tab" value="bookmarking" id="bookmarking" checked/>
-                <input type="radio" name="tab" value="searching" id="searching" />
-                <input type="radio" name="tab" value="sharing" id="sharing" />
+                <input type="radio" name="tab" value="bookmarking" id="bookmarking" checked readOnly/>
+                <input type="radio" name="tab" value="searching" id="searching" readOnly/>
+                <input type="radio" name="tab" value="sharing" id="sharing" readOnly/>
                 <ul>
                     <li className="link">
-                        <label for="bookmarking">
+                        <label htmlFor="bookmarking">
                             Simple Bookmarking
                         </label>
                     </li>
                     <li className="link">
-                        <label for="searching">
+                        <label htmlFor="searching">
                             Speedy Searching
                         </label>
                     </li>
                     <li className="link">
-                        <label for="sharing">
+                        <label htmlFor="sharing">
                             Easy Sharing
                         </label>
                     </li>
@@ -41,7 +41,7 @@ export default function () {
                                 gives you complete control over how you manage your favourite sites.
                             </p>
                         </div>
-                        <button class="btn">More Info</button>
+                        <button className="btn">More Info</button>
                     </div>
                     <div className="content" id="searching">
                         <img src="../../images/illustration-features-tab-2.svg" alt="" />
@@ -51,7 +51,7 @@ export default function () {
                                 Our powerful search feature will help you find saved sites in no time at all.
                                 No need to trawl through all of your bookmarks.            
                             </p>
-                            <button class="btn">More Info</button>
+                            <button className="btn">More Info</button>
                         </div>
                     </div>
                     <div className="content" id="sharing">
@@ -62,7 +62,7 @@ export default function () {
                                 Easily share your bookmarks and collections with others. Create a shareable
                                 link that you can send at the click of a button.            
                             </p>
-                            <button class="btn">More Info</button>
+                            <button className="btn">More Info</button>
                         </div>
                     </div>
                 </div>

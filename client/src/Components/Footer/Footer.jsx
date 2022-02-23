@@ -1,12 +1,14 @@
 import React from 'react'
+import "./footer.scss"
 
 export default function Footer() {
   return (
     <footer className="footer">
         <div className="wrapper">
-            <div className="primary">
-                <img src="../../images/logo-bookmark.svg" alt="" />
-                <ul className="menu">
+            <div className="content">
+                <div className="primary">
+                    <img src="../../images/logo-bookmark.svg" alt="" />
+                    <ul className="menu">
                     <li>
                         <a href="#">Features</a>
                     </li>
@@ -21,6 +23,7 @@ export default function Footer() {
             <div className="social">
                 <a href="#" className="facebook"></a>
                 <a href="#" className="twitter"></a>
+            </div>
             </div>
         </div>
     </footer>

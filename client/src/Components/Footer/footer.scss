@@ -1,0 +1,72 @@
+.footer {
+    background: #252b46;
+    text-align: center;
+    padding: 3em 0;
+
+    .wrapper {
+        max-width: 1280px;
+        margin: auto;
+        padding: 0 1em;
+
+        .menu {
+            margin-top: 2em;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: list-item;
+                text-align: match-parent;
+
+                a {
+                    display: block;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: #e5e5e5;
+                    padding: 1em;
+                    letter-spacing: 1px;
+
+                }
+            }
+        }
+
+        .social {
+            margin-top: 2em;
+            
+            a {
+                width: 40px;
+                height: 40px;
+                display: inline-block;
+
+                &.facebook {
+                    background: url(../../images/icon-facebook.svg) no-repeat center;
+                }
+
+                &.twitter {
+                    background: url(../../images/icon-twitter.svg) no-repeat center;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .content {
+            display: flex;
+            justify-content: space-between;
+
+            .primary {
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin-right: 1em;
+                }
+
+                .menu {
+                    display: flex;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

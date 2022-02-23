@@ -7,7 +7,7 @@ export default function Landing() {
         <div className="wrapper">
             <div className="grid">
                 <div className="img-container">
-                    <img src={"../../images/illustration-hero.svg"} alt="" />
+                    <img src="../../images/illustration-hero.svg" alt="" />
                 </div>
                 <div className="content">
                     <h1>A Simple Bookmark Manager</h1>
