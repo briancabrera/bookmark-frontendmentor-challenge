@@ -1,0 +1,67 @@
+.questions {
+    padding: 4em 0 8em;
+    text-align: center;
+
+    .wrapper {
+        max-width: 1280px;
+        margin: auto;
+        padding: 0 1em;
+
+        h2 {
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+
+        p {
+            max-width: 580px;
+            margin: auto;
+            color: #9194a1;
+            line-height: 1.8;
+            font-size: 0.9em;
+        }
+
+        .carousel {
+            text-align: left;
+            max-width: 580px;
+            margin: 2em auto;
+
+            details {
+                
+                .title {
+                    padding: 1.5em 0;
+                    border-bottom: 1px solid #e5e5e5;
+                    font-size: 0.9em;
+
+                    &:focus {
+                        outline: 0;
+                    }
+                }
+
+                p {
+                    color: #9194a1;
+                    line-height: 1.8;
+                    font-size: 0.9em;
+                }
+            }
+        }
+
+        button {
+            background: #5368df;
+            color: #fff;
+            padding: 1em 1em;
+            font-size: 0.9em;
+            font-weight: 500;
+            border-radius: 0.5em;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px 10px -5px #5368df;
+        }
+
+        @media screen and (min-width: 1024px) {
+
+            .carousel {
+                border-top: 1px solid #e5e5e5;
+            }
+        }
+    }
+}
